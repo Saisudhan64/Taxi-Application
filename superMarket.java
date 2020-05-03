@@ -122,7 +122,7 @@ public class superMarket {
 				System.out.println("Do you have a member ship y for yes n for no");
 				String s = scan.next();
 				if(s.equals("y")){
-					System.out.println("Tell me your membership ID");
+					System.out.println("Tell me your membership ID which is an number which looks like this 'XXXX'");
 					int mid =  scan.nextInt();
 					for( i=0;i<list.size();i++){
 						if(mid ==list.get(i)){crash=1;break;}
