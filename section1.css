@@ -1,0 +1,138 @@
+.mainparent{
+    height: auto;
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+    font-family: 'calibri';
+    background-image: linear-gradient(to top right,#ffffff,#f2f2f2);
+    
+}
+.parent1 {
+  height:auto;
+  display:grid;
+  grid-template-rows: 50% 50%; 
+  
+    }
+.parent2 {
+    height: auto;
+    display: grid;
+    grid-gap: 0.4rem;
+    grid-template-columns: repeat(2, 1fr);
+
+  }
+
+   .card {
+    height:fit-content;
+    display:grid;
+    grid-template-rows: 50% 50%;
+    border: 2px solid #e6e6e6;
+  }
+  
+  .maincard {
+    display:block;
+    background-color:#472876;
+    height:317px;
+    width:660px;
+    box-sizing: border-box;
+    padding:70px;
+    color:white;
+  }
+  .mainimage{
+    height:fit-content;
+    display:block;
+  }
+  .cardimage{
+    height:fit-content;
+    width: fit-content;
+    display:block;
+  }
+   h6 {
+    margin: 0
+  }
+  h4{
+      font-weight: 100;
+  }
+  .customizemainimage{
+      object-fit: cover;
+      height:320px;
+      width:660px;
+  }
+  .customizeecardimage{
+    object-fit: cover;
+    height:145px;
+    width:325px;
+  }
+  button{
+      border-radius: 15px;
+      background-color: transparent;
+      border:1px solid white;
+      color:white;
+      box-sizing: border-box;
+      padding-top:7px;
+      padding-bottom: 7px;
+      padding-left: 18px;
+      padding-right: 15px;
+      font-size: 12px;
+  }
+  .fa{
+      margin-left: 24px;;
+  }
+  .cardcontent{
+      padding-left:30px;
+      height: fit-content;
+      box-sizing: border-box;
+      padding-top:3px;  
+      padding-bottom: 15px;;   
+  }
+  h3{margin:0;}
+  h5{
+      color:grey;
+      margin:0;
+      padding-top:15px;
+  }
+  .leftspan{
+      display: block;
+      float:left;  
+      padding-top:10px;
+  
+    }
+  .rightspan{
+      display: block;
+      float: right;
+      padding-top:10px;
+      padding-right:30px;
+  }
+  hr{margin:0;
+    width:90%;
+    background-color:#e6e6e6;
+}
+  .fas{
+      color:grey
+  }
+@media only screen and (max-width: 768px) {
+   .mainparent{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:1rem;
+    width:100%;
+   }
+   .parent1{
+       width:100%;
+   }
+   .parent2{
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap:1rem;
+    width:100%;    
+}
+.card{
+    height:400px;
+}
+.customizeecardimage{
+    object-fit: cover;
+    height:245px;
+    width:100%;
+  }
+  .cardcontent{
+    padding-left:30px;
+    padding-top: 60px;;   
+}
+  }
